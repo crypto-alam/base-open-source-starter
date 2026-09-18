@@ -27,3 +27,13 @@ This contract demonstrates:
 - Events
 - Public blockchain state
 - Basic smart contract interaction
+## Resetting the Number
+
+The `resetNumber` function sets the stored number back to zero.
+
+Example workflow:
+
+1. Call `setNumber(100)`.
+2. Call `getNumber()` and receive `100`.
+3. Call `resetNumber()`.
+4. Call `getNumber()` again and receive `0`.
