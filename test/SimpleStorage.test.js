@@ -18,5 +18,12 @@ describe("SimpleStorage", function () {
     await simpleStorage.resetNumber();
 
     expect(await simpleStorage.getNumber()).to.equal(0);
+  });  it("should emit NumberUpdated when setting a number", async function () {
+    const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+    const simpleStorage = await SimpleStorage.deploy();
+
+    await expect(simpleStorage.setNumber(25))
+      .to.emit(simpleStorage, "NumberUpdated")
+      .withArgs(25);
   });
 });
