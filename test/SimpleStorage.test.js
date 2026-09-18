@@ -25,5 +25,13 @@ describe("SimpleStorage", function () {
     await expect(simpleStorage.setNumber(25))
       .to.emit(simpleStorage, "NumberUpdated")
       .withArgs(25);
+  });  it("should emit NumberReset when resetting", async function () {
+    const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+    const simpleStorage = await SimpleStorage.deploy();
+
+    await simpleStorage.setNumber(25);
+
+    await expect(simpleStorage.resetNumber())
+      .to.emit(simpleStorage, "NumberReset");
   });
 });
