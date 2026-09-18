@@ -52,3 +52,19 @@ Test file:
 `test/SimpleStorage.test.js`
 
 The tests are designed to catch unexpected changes in contract behavior as the project develops.
+## Testing
+
+The project includes automated tests for the SimpleStorage contract.
+
+The tests currently verify:
+
+- Storing and retrieving numbers
+- Resetting the stored number
+- The `NumberUpdated` event
+- The `NumberReset` event
+
+Test file:
+
+`test/SimpleStorage.test.js`
+
+The tests are designed to catch unexpected changes in contract behavior as the project develops.
