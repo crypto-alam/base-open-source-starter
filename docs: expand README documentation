@@ -1,0 +1,14 @@
+## Documentation
+
+Additional developer guides are available in the `docs` directory.
+
+Topics include:
+
+- Git branching
+- Git commit practices
+- GitHub Issues
+- Pull Requests
+- Solidity security
+- Base Network
+- Smart contract testing
+- Developer checklist
